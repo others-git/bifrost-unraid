@@ -3,10 +3,10 @@
 Unraid [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications/)
 template for **[Bifrost](https://github.com/others-git/bifrost)** — a self-hosted smart home control hub.
 
-Bifrost bridges lights (Philips Hue, Govee, LIFX), audio (Sonos, Onkyo / Integra), and any
-Home Assistant integration behind one fast web UI and REST API. It ships as a single static
-binary with a single SQLite file, and runs from the published image
-`ghcr.io/others-git/bifrost:latest`.
+Bifrost brings your lights (Philips Hue, Govee, LIFX), audio (Sonos, Onkyo / Integra),
+power devices, and TVs/streamers under one web UI and REST API, and can also surface any
+Home Assistant integration as a Bifrost device. It ships as a single binary with one
+SQLite file, and runs from the published image `ghcr.io/others-git/bifrost:latest`.
 
 **[➜ Install from Community Applications](https://ca.unraid.net/apps/bifrost-0ehyi200nwfgp8)** — or
 search **Bifrost** on the Apps tab in Unraid.
