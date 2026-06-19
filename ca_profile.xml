@@ -3,7 +3,7 @@
   <Profile>
 **Bifrost** — a self-hosted smart home control hub.
 
-Bifrost bridges your lights (Philips Hue, Govee, LIFX), audio (Sonos, Onkyo / Integra), and any Home Assistant integration behind one fast web UI and REST API. Rooms are the core abstraction; scenes are server-side full-state snapshots. Reliability is the point: explicit reconnect state machines, polling fallback, and live push to the browser. Ships as a single static binary with a single SQLite file.
+Bifrost controls your lights (Philips Hue, Govee, LIFX), audio (Sonos, Onkyo / Integra), and power devices (switches, plugs, fans) behind one fast web UI and REST API, and can surface any Home Assistant integration as Bifrost devices. Rooms are the core abstraction; scenes are server-side full-state snapshots; voice and AI assistants drive it through an embedded MCP server. Reliability is the point: explicit reconnect state machines, polling fallback, and live push to the browser. Ships as a single static binary with a single SQLite file.
 
 This repository hosts the Unraid Community Applications template for Bifrost. Install it from the **Apps** tab, set a `BIFROST_SECRET`, and open the web UI on port 3000.
 

@@ -8,6 +8,9 @@ Home Assistant integration behind one fast web UI and REST API. It ships as a si
 binary with a single SQLite file, and runs from the published image
 `ghcr.io/others-git/bifrost:latest`.
 
+**[➜ Install from Community Applications](https://ca.unraid.net/apps/bifrost-0ehyi200nwfgp8)** — or
+search **Bifrost** on the Apps tab in Unraid.
+
 ## Install on Unraid
 
 1. In Unraid, go to the **Apps** tab (Community Applications) and search for **Bifrost**.
@@ -18,7 +21,12 @@ binary with a single SQLite file, and runs from the published image
    - Leave **Bind Address** at `0.0.0.0:3000` unless you want a different port.
 3. Apply. Bifrost runs on the **host network** — required so device auto-detect
    (SSDP/eISCP broadcast, multicast, subnet sweep) reaches your LAN.
-4. Open `http://[server-ip]:3000/`. Pair Hue via the bridge link button in the UI.
+4. Open `http://[server-ip]:3000/`. Set the hub password on first load, then add
+   providers. Pair Hue via the bridge link button in the UI.
+
+Bifrost is built for a trusted LAN — one hub password, no per-user accounts. For
+remote access, put it behind Tailscale, a VPN, or a TLS reverse proxy rather than
+forwarding port 3000 to the internet.
 
 ## Repository layout
 
@@ -30,8 +38,9 @@ binary with a single SQLite file, and runs from the published image
 
 ## Adding this repository manually
 
-If it is not yet indexed by Community Applications, add the repo directly:
-Community Applications → **Settings** → add this repository's URL.
+Bifrost is indexed in Community Applications (search **Bifrost**), so this is
+rarely needed. To pull the template directly anyway — e.g. to test an unreleased
+change — add the repo under Community Applications → **Settings**.
 
 The template's `TemplateURL` is pinned to:
 `https://raw.githubusercontent.com/others-git/bifrost-unraid/main/templates/bifrost.xml`
